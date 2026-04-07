@@ -1,0 +1,117 @@
+'use strict';
+
+/**
+ * src/data/inventory.js
+ * Static in-memory inventory dataset.
+ * Each record contains: id, productName, category, price, supplier.
+ */
+
+const inventory = [
+  {
+    id: 1,
+    productName: 'Ergonomic Office Chair',
+    category: 'Furniture',
+    price: 150,
+    supplier: 'ABC Traders',
+  },
+  {
+    id: 2,
+    productName: 'Standing Desk',
+    category: 'Furniture',
+    price: 320,
+    supplier: 'ABC Traders',
+  },
+  {
+    id: 3,
+    productName: 'Wireless Mouse',
+    category: 'Electronics',
+    price: 25,
+    supplier: 'Tech Supplies Inc.',
+  },
+  {
+    id: 4,
+    productName: 'Mechanical Keyboard',
+    category: 'Electronics',
+    price: 85,
+    supplier: 'Tech Supplies Inc.',
+  },
+  {
+    id: 5,
+    productName: 'USB-C Monitor',
+    category: 'Electronics',
+    price: 210,
+    supplier: 'Display World',
+  },
+  {
+    id: 6,
+    productName: 'Whiteboard Markers (10 Pack)',
+    category: 'Stationery',
+    price: 12,
+    supplier: 'Office Max',
+  },
+  {
+    id: 7,
+    productName: 'A4 Printing Paper (500 Sheets)',
+    category: 'Stationery',
+    price: 8,
+    supplier: 'Paper Pros',
+  },
+  {
+    id: 8,
+    productName: 'Desk Organizer',
+    category: 'Office Accessories',
+    price: 18,
+    supplier: 'Office Max',
+  },
+  {
+    id: 9,
+    productName: 'Noise Cancelling Headphones',
+    category: 'Electronics',
+    price: 199,
+    supplier: 'Audio Needs',
+  },
+  {
+    id: 10,
+    productName: 'Leather Sofa',
+    category: 'Furniture',
+    price: 550,
+    supplier: 'Luxury Furnishings',
+  },
+  {
+    id: 11,
+    productName: 'Webcam 1080p',
+    category: 'Electronics',
+    price: 45,
+    supplier: 'Tech Supplies Inc.',
+  },
+  {
+    id: 12,
+    productName: 'Sticky Notes (5 Pack)',
+    category: 'Stationery',
+    price: 5,
+    supplier: 'Office Max',
+  },
+  {
+    id: 13,
+    productName: 'Coffee Maker',
+    category: 'Breakroom',
+    price: 75,
+    supplier: 'Kitchen Equip',
+  },
+  {
+    id: 14,
+    productName: 'Coffee Beans (1kg)',
+    category: 'Breakroom',
+    price: 20,
+    supplier: 'Kitchen Equip',
+  },
+  {
+    id: 15,
+    productName: 'Filing Cabinet',
+    category: 'Furniture',
+    price: 110,
+    supplier: 'ABC Traders',
+  },
+];
+
+module.exports = inventory;
