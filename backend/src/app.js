@@ -41,11 +41,6 @@ app.use('/supplier', supplierRoutes);
 app.use('/inventory', inventoryRoutes);
 app.get('/search', searchInventory);
 
-// ── Static Frontend ─────────────────────────────────────────────────────────
-// Served last so API routes always take priority
-
-app.use(express.static(path.join(__dirname, '..', '..', 'frontend')));
-
 // ── 404 Handler ─────────────────────────────────────────────────────────────
 
 app.use((req, res) => {
