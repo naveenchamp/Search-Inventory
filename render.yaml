@@ -1,9 +1,10 @@
 services:
   - type: web
-    name: zerostock-assignment
+    name: search-inventory-backend
     env: node
+    rootDir: backend
     plan: free
-    buildCommand: npm run build
+    buildCommand: npm install
     startCommand: npm start
     envVars:
       - key: NODE_ENV
