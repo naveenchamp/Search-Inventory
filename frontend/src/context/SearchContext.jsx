@@ -1,6 +1,7 @@
 import { createContext, useContext, useState, useCallback } from 'react'
 
 const SearchContext = createContext(null)
+const API_BASE_URL = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/$/, '')
 
 /**
  * SearchProvider — wraps the app and provides search state globally.
@@ -28,7 +29,7 @@ export function SearchProvider({ children }) {
     const qs = params.toString() ? `?${params}` : ''
 
     try {
-      const res  = await fetch(`/search${qs}`)
+      const res  = await fetch(`${API_BASE_URL}/search${qs}`)
       const data = await res.json()
 
       if (!res.ok) {

@@ -7,8 +7,8 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      // Proxy /search requests to the Express backend
-      '/search': {
+      // Proxy API requests to the Express backend during local development
+      '^/(api|search|inventory|supplier)': {
         target: 'http://localhost:3000',
         changeOrigin: true,
       },

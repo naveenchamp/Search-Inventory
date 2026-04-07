@@ -1,0 +1,22 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build:vercel",
+  "rewrites": [
+    {
+      "source": "/search",
+      "destination": "/api/search"
+    },
+    {
+      "source": "/inventory/summary",
+      "destination": "/api/inventory-summary"
+    },
+    {
+      "source": "/inventory",
+      "destination": "/api/inventory"
+    },
+    {
+      "source": "/supplier",
+      "destination": "/api/supplier"
+    }
+  ]
+}
